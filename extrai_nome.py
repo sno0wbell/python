@@ -1,7 +1,7 @@
 import boto3
 
 #Lista de IDs das instâncias
-instance_ids = ["x, y"]
+instance_ids = ["x" , "y"]
 
 #Crie uma sessão do Boto3
 session = boto3.Session(
