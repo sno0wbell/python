@@ -1,17 +1,17 @@
 import boto3
 
 #Lista de IDs das instâncias
-instance_ids = ["x", "y"]
+instance_ids = ['']
 
 #Crie uma sessão do Boto3
 session = boto3.Session(
-        aws_access_key_id = "",
-        aws_secret_access_key = "",
-        region_name=""
+        aws_access_key_id = '',
+        aws_secret_access_key = '',
+        region_name=''
     )
 
 #Define o serviço como EC2
-ec2_client = session.client("ec2")
+ec2_client = session.client('ec2')
 
 #Itera sobre a lista de IDs das instâncias
 for instance_id in instance_ids:

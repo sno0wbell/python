@@ -11,7 +11,7 @@ session = boto3.Session(
 ec2_client = session.client('ec2')
 
 #Substitua INSTANCE_IDS pelos IDs das instâncias que você deseja verificar
-instance_ids = ['ID_1', 'ID_2']
+instance_ids = ['']
 
 for instance_id in instance_ids:
     response = ec2_client.describe_instances(InstanceIds=[instance_id])

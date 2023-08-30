@@ -7,7 +7,7 @@ session = boto3.Session(
 )
 
 # Lista de IDs de instância que você deseja atualizar
-instance_ids_to_update = ['i-x, i-y']  # Substitua pelos IDs desejados
+instance_ids_to_update = ['']  # Substitua pelos IDs desejados
 
 # Selecionando o serviço ec2
 ec2_client = session.client('ec2')
